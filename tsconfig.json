@@ -1,0 +1,71 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // --------------------------------------------------
+    // File Layout (kept for future builds)
+    // --------------------------------------------------
+    // "rootDir": "./src",
+    // "outDir": "./dist",
+
+    // --------------------------------------------------
+    // Environment / Module Settings
+    // --------------------------------------------------
+    // We are using Node.js ESM (required by Commercetools SDK)
+    "module": "nodenext",
+
+    // Allows latest JS features (top-level await, etc.)
+    "target": "esnext",
+
+    // REQUIRED for Node.js globals like:
+    // process, fetch, Buffer, etc.
+    // (Fixes: Cannot find name 'process')
+    "types": ["node"],
+
+    // REQUIRED when using "module": "nodenext"
+    // Helps TypeScript resolve ESM imports correctly
+    "moduleResolution": "nodenext",
+
+    // --------------------------------------------------
+    // Output / Debugging
+    // --------------------------------------------------
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // --------------------------------------------------
+    // Stricter Typechecking Options (GOOD PRACTICE)
+    // --------------------------------------------------
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // --------------------------------------------------
+    // Recommended Options
+    // --------------------------------------------------
+    "strict": true,
+
+    // Kept for future React / frontend usage
+    "jsx": "react-jsx",
+
+    // ❗ IMPORTANT CHANGE ❗
+    // This was causing:
+    // "ECMAScript imports and exports cannot be written in a CommonJS file"
+    // It is VERY strict and not needed for SDK setup.
+    // You can enable it later once the project stabilizes.
+    "verbatimModuleSyntax": false,
+
+    // Required for tooling like ts-node
+    "isolatedModules": true,
+
+    // Keeps side-effect imports safe
+    "noUncheckedSideEffectImports": true,
+
+    // Forces module detection (good for monorepos)
+    "moduleDetection": "force",
+
+    // Skips type checking of node_modules (recommended)
+    "skipLibCheck": true
+  },
+
+  // Only compile our source files
+  "include": ["src"]
+}

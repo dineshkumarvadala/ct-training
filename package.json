@@ -1,0 +1,24 @@
+{
+  "name": "ct-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --loader ts-node/esm src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@commercetools/platform-sdk": "^8.23.0",
+    "@commercetools/ts-client": "^4.8.0",
+    "dotenv": "^17.2.4"
+  }
+}
