@@ -220,38 +220,38 @@ async function main(): Promise<void> {
 main().catch(console.error);
 
 
-// async function getProductById(productId: string): Promise<void> {
-//   const response = await httpApiRoot
-//     .products()
-//     .withId({ ID: productId })
-//     .get()
-//     .execute();
-//   const product: Product = response.body;
-//   console.log('✅ Product fetched successfully!');
-//   console.log(`🆔 ID   : ${product.id}`);
-//   console.log(
-//     `📦 Name : ${
-//       product.masterData.current.name['en-GB'] ??
-//       product.masterData.current.name['en'] ??
-//       Object.values(product.masterData.current.name)[0]
-//     }`
-//   );
-//   console.log(
-//     `🔑 Key  : ${product.key ?? 'No Key Set'}`
-//   );
-//   console.log(
-//     `📌 Published : ${product.masterData.published}\n`
-//   );
-// }
+// // async function getProductById(productId: string): Promise<void> {
+// //   const response = await httpApiRoot
+// //     .products()
+// //     .withId({ ID: productId })
+// //     .get()
+// //     .execute();
+// //   const product: Product = response.body;
+// //   console.log('✅ Product fetched successfully!');
+// //   console.log(`🆔 ID   : ${product.id}`);
+// //   console.log(
+// //     `📦 Name : ${
+// //       product.masterData.current.name['en-GB'] ??
+// //       product.masterData.current.name['en'] ??
+// //       Object.values(product.masterData.current.name)[0]
+// //     }`
+// //   );
+// //   console.log(
+// //     `🔑 Key  : ${product.key ?? 'No Key Set'}`
+// //   );
+// //   console.log(
+// //     `📌 Published : ${product.masterData.published}\n`
+// //   );
+// // }
 
-// // Create readline interface
-// const rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout,
-// });
+// // // Create readline interface
+// // const rl = readline.createInterface({
+// //   input: process.stdin,
+// //   output: process.stdout,
+// // });
 
-// // Prompt for product ID
-// rl.question('Enter Product ID: ', async (productId) => {
-//   rl.close();
-//   await getProductById(productId.trim()).catch(console.error);
-// });
+// // // Prompt for product ID
+// // rl.question('Enter Product ID: ', async (productId) => {
+// //   rl.close();
+// //   await getProductById(productId.trim()).catch(console.error);
+// // });

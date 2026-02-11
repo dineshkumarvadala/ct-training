@@ -1,4 +1,5 @@
 node_modules/
+commercetools-sunrise-data/
 .env
 dist/
 build/
