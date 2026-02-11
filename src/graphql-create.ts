@@ -8,7 +8,6 @@ async function runGraphQLQuery(query: string) {
       body: { query },
     });
 
-    
     return response.body;
 
   } catch (error: any) {
