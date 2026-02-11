@@ -10,7 +10,6 @@ async function runGraphQLQuery(query: string) {
   return response.body;
 }
 
-
 async function fetchProducts() {
   const query = `
     query {
@@ -59,7 +58,7 @@ async function fetchCustomers() {
 
 
 async function main() {
-  console.log('🚀 Fetching via GraphQL (SDK client)...\n');
+  console.log(' Fetching via GraphQL (SDK client)...\n');
 
   await fetchProducts();
   await fetchCustomers();
