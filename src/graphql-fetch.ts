@@ -56,6 +56,7 @@ async function fetchCustomers() {
   console.log(JSON.stringify(data, null, 2));
 }
 
+
 async function main() {
   console.log(' Fetching via GraphQL (SDK client)...\n');
 
