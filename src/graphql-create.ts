@@ -101,6 +101,7 @@ async function main() {
   console.log('\n All resources created successfully!');
 }
 
+
 main().catch((error) => {
   console.error('\n Error occurred:', error.message);
 });
