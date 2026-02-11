@@ -204,7 +204,7 @@ async function getOrders(): Promise<void> {
 }
 
 async function main(): Promise<void> {
-  console.log('🚀 Fetching Commercetools Data...\n');
+  console.log(' Fetching Commercetools Data...\n');
   console.log('═════════════════════════════════════════');
   
   await getProducts();
